@@ -1,0 +1,30 @@
+data_collector_task:
+  description: >
+    Conduct a deep research about {topic}
+    Make sure you collect the maximum of data and relavant one
+  expected_output: >
+    The list of 10 websites with the most relevant information about {topic}
+  agent: data_collector
+
+web_scraper_task:
+  description: > 
+    Scrape the website to retrieve all information about {topic}
+  expected_output: > 
+    Fully scraped website with all the important  information from the websites
+  agent: web_scraper
+
+ai_news_writer_task:
+  agent: ai_news_writer
+  description: >
+    Write a concise and  informative paper research based on the provided information
+  expected_output: > 
+    You are a skilled writer with a great sense of explanation and reasoning. You know how to craft a paper research to
+    everyone, even kids. Known for your ability to distill complex information into clear and concise prose.
+
+file_writer_task:
+  agent: file_writer
+  description: >
+    Write the paper research into a file
+  expected_output: > 
+    A fully fledge paper research with all information task into a files named {topic}.md
+  
